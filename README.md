@@ -3,7 +3,7 @@
 
 # LeNet5网络介绍
 在本次项目中，我们使用的是LeNet5实现手写数字识别目标的。下面我将对LeNet5做出详细介绍。<br>
- ![](https://raw.githubusercontent.com/zq111724/pic/main/1.png)
+ ![](https://raw.githubusercontent.com/zq111724/pic/main/1.png)<br>
 LeNet5的基本结构包括7层网络结构（不含输入层），其中包括2个卷积层、2个降采样层（池化层）、2个全连接层和输出层。<br>
 输入层：接收大小为的手写数字图像，其中包括灰度值（0-255）。在实际应用中，我们通常会对输入图像进行预处理，例如对像素值进行归一化，以加快训练速度和提高模型的准确性。<br>
 卷积层C1：包括6个卷积核，每个卷积核的大小为，步长为1，填充为0。因此，每个卷积核会产生一个大小为的特征图（输出通道数为6）。<br>
@@ -17,5 +17,5 @@ LeNet5的基本结构包括7层网络结构（不含输入层），其中包括2
 
 # MNIST数据集介绍
 MNIST数据集是手写数字识别数据集，由60000张训练图像和10000张测试图像组成。每张图像的大小为28x28像素，表示一个手写的数字。MNIST数据集来自美国国家标准与技术研究所, National Institute of Standards and Technology (NIST). 训练集 (training set) 由来自 250 个不同人手写的数字构成, 其中 50% 是高中学生, 50% 来自人口普查局 (the Census Bureau) 的工作人员. 测试集(test set) 也是同样比例的手写数字数据。<br>
- ![](https://raw.githubusercontent.com/zq111724/pic/main/2.png)
+ ![](https://raw.githubusercontent.com/zq111724/pic/main/2.png)<br>
 在该项目中，我们直接使用pytorch的处理图像视频的torchvision工具集下载MNIST的训练和测试图片，数据集的图片是以字节的形式进行存储，在我们进行训练和测试时可以直接使用 torch.utils.data.DataLoader 进行加载。<br>
